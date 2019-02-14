@@ -9,8 +9,9 @@ $(document).ready(function() {
  * Function that is called when the document is ready.
  */
 function initializePage() {
-	$('.project a').click(addProjectDetails);
-
+        
+    $('a.project').click(addProjectDetails);
+ 
 	// $('#colorBtn').click(randomizeColors);
 }
 
@@ -26,5 +27,9 @@ function addProjectDetails(e) {
 	// get rid of 'project' from the front of the id 'project3'
 	var idNumber = projectID.substr('project'.length);
 
+   
 	console.log("User clicked on project " + idNumber);
+    
+    // $.get("/project/");
+   
 }
